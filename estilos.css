@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -8,20 +9,23 @@ body {
 }
 
 .header {
-    display: flex-block;
+    display: block;
     padding: 5px;
     margin: 20px 0px;
-    border-radius: 20px;
+    border-radius: 10px;
     justify-content: center;
     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);   
 }
 
 .section {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .nav { 
     display: flex;
+    margin: 10px;
     justify-content: start;
     border-top: 1px solid;
     border-bottom: 1px solid; 
@@ -46,8 +50,9 @@ a {
 
 .section__articulo {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    margin: 30px 0px;
+    margin: 30px 30px;
 }
 
 .articulo__color div {
@@ -83,10 +88,38 @@ a {
 }
 
 .aside {
-    display: inline-flex;
-    background-color: chocolate;
+    display: inline-block;
+    width: 100%;
+    margin: 15px;
+    border-left: 1px solid;
+    
 }
 
-.footer{
-    background-color: darkgreen;
+.aside__lista {
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.aside li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+}
+
+.footer {
+    display: block;
+    width: 96.5%;
+    padding: 20px;
+    margin: 20px 0px; 
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-family: "Didact Gothic";
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__texto {
+    display: block;
+    text-align: center;
+    margin: auto;
 }
